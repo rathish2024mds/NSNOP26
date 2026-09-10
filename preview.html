@@ -1,0 +1,2063 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+NSNOP | Confident Smile – Healthy Tomorrow
+</title>
+
+<meta name="description"
+content="Namma School Namma Ooru Palli – Confident Smile Healthy Tomorrow | Karpaga Vinayaga Institute of Dental Sciences">
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f8fb;
+    color:#243447;
+    line-height:1.65;
+}
+
+:root{
+    --blue:#063970;
+    --blue2:#075985;
+    --cyan:#0891b2;
+    --teal:#0f766e;
+    --light:#eff8fc;
+    --white:#ffffff;
+    --gold:#d4a017;
+    --dark:#0f172a;
+    --gray:#64748b;
+    --border:#dce6ee;
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+section{
+    padding:90px 0;
+}
+
+h1,h2,h3{
+    line-height:1.2;
+}
+
+button,
+a{
+    font-family:inherit;
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+
+    background:rgba(255,255,255,.96);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid var(--border);
+}
+
+.nav-inner{
+    height:72px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-weight:800;
+    color:var(--blue);
+    font-size:19px;
+}
+
+.logo span{
+    color:var(--cyan);
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#26384a;
+    font-size:14px;
+    font-weight:700;
+}
+
+.nav-links a:hover{
+    color:var(--cyan);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+    min-height:100vh;
+
+    padding-top:130px;
+
+    display:flex;
+    align-items:center;
+
+    color:white;
+
+    background:
+    radial-gradient(circle at 85% 20%,rgba(45,212,191,.25),transparent 30%),
+    linear-gradient(135deg,#032b4c,#075985 60%,#0f766e);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.35fr .65fr;
+    gap:60px;
+    align-items:center;
+}
+
+.award-badge{
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border:1px solid rgba(255,255,255,.35);
+    border-radius:50px;
+
+    background:rgba(255,255,255,.10);
+
+    font-size:13px;
+    font-weight:700;
+
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:clamp(44px,6vw,75px);
+    font-weight:900;
+    letter-spacing:-2px;
+}
+
+.hero h1 span{
+    color:#99f6e4;
+}
+
+.hero-subtitle{
+    font-size:21px;
+    margin-top:20px;
+    max-width:750px;
+    color:#e0f2fe;
+}
+
+.hero-meta{
+    margin-top:22px;
+    font-size:14px;
+    color:#bae6fd;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 22px;
+    border-radius:8px;
+
+    text-decoration:none;
+    font-size:14px;
+    font-weight:800;
+
+    transition:.25s;
+}
+
+.btn-primary{
+    background:white;
+    color:var(--blue);
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+    border:1px solid rgba(255,255,255,.55);
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:rgba(255,255,255,.12);
+}
+
+/* HERO CARD */
+
+.hero-card{
+    padding:30px;
+
+    border-radius:22px;
+
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.25);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 25px 70px rgba(0,0,0,.2);
+}
+
+.hero-card-title{
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#bae6fd;
+    margin-bottom:20px;
+}
+
+.hero-number{
+    font-size:52px;
+    font-weight:900;
+}
+
+.hero-label{
+    color:#dbeafe;
+    margin-bottom:22px;
+}
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-heading small{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:var(--cyan);
+    font-weight:900;
+}
+
+.section-heading h2{
+    font-size:40px;
+    color:var(--dark);
+    margin:10px 0;
+}
+
+.section-heading p{
+    max-width:750px;
+    margin:auto;
+    color:var(--gray);
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:32px;
+
+    border-radius:16px;
+    border:1px solid var(--border);
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+}
+
+.card h3{
+    color:var(--blue);
+    margin-bottom:15px;
+}
+
+.info-row{
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+
+    padding:11px 0;
+
+    border-bottom:1px solid #edf2f7;
+
+    font-size:14px;
+}
+
+.info-row strong{
+    color:var(--dark);
+}
+
+/* =========================================================
+   IMPACT
+========================================================= */
+
+.impact{
+    background:var(--light);
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.stat{
+    background:white;
+    border:1px solid var(--border);
+    border-radius:16px;
+
+    padding:30px 20px;
+    text-align:center;
+
+    transition:.25s;
+}
+
+.stat:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.stat-number{
+    font-size:43px;
+    font-weight:900;
+    color:var(--blue);
+}
+
+.stat-label{
+    font-size:14px;
+    font-weight:700;
+    color:var(--gray);
+}
+
+/* =========================================================
+   FINDINGS
+========================================================= */
+
+.findings{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-top:25px;
+}
+
+.bar-item{
+    margin:22px 0;
+}
+
+.bar-title{
+    display:flex;
+    justify-content:space-between;
+
+    font-size:14px;
+    font-weight:800;
+
+    margin-bottom:7px;
+}
+
+.bar{
+    height:12px;
+    background:#e2e8f0;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:linear-gradient(90deg,var(--blue),var(--cyan));
+    border-radius:20px;
+}
+
+/* =========================================================
+   CARE PATHWAY
+========================================================= */
+
+.pathway{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.step{
+    text-align:center;
+
+    padding:25px 15px;
+
+    background:white;
+
+    border-radius:15px;
+
+    border:1px solid var(--border);
+}
+
+.step-circle{
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    margin:0 auto 15px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:var(--blue);
+    color:white;
+
+    font-weight:900;
+}
+
+.step h3{
+    color:var(--blue);
+    margin-bottom:8px;
+}
+
+/* =========================================================
+   GOOGLE EARTH
+========================================================= */
+
+.geo-section{
+    background:#071b2d;
+    color:white;
+}
+
+.geo-section .section-heading h2{
+    color:white;
+}
+
+.geo-section .section-heading p{
+    color:#cbd5e1;
+}
+
+.geo-box{
+    min-height:450px;
+
+    border-radius:22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    background:
+    radial-gradient(circle at 50% 20%,rgba(20,184,166,.3),transparent 35%),
+    linear-gradient(135deg,#0c4a6e,#082f49);
+}
+
+.globe{
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+.geo-box h3{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.geo-box p{
+    max-width:650px;
+    color:#cbd5e1;
+    margin:0 auto 25px;
+}
+
+/* =========================================================
+   SCHOOL REGISTER
+========================================================= */
+
+.register-section{
+    background:#f8fafc;
+}
+
+.register-tools{
+    display:flex;
+    gap:12px;
+    margin-bottom:25px;
+}
+
+.search{
+    flex:1;
+
+    padding:14px 16px;
+
+    border:1px solid var(--border);
+    border-radius:9px;
+
+    font-size:15px;
+
+    outline:none;
+}
+
+.search:focus{
+    border-color:var(--cyan);
+}
+
+.school-table-wrapper{
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    overflow:auto;
+
+    max-height:600px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:700px;
+}
+
+thead{
+    position:sticky;
+    top:0;
+    z-index:2;
+
+    background:var(--blue);
+    color:white;
+}
+
+th,td{
+    padding:13px 15px;
+
+    text-align:left;
+
+    font-size:13px;
+
+    border-bottom:1px solid #edf2f7;
+}
+
+th{
+    font-weight:800;
+}
+
+tbody tr:hover{
+    background:#f0fdfa;
+}
+
+.map-link{
+    color:var(--cyan);
+    text-decoration:none;
+    font-weight:700;
+}
+
+/* =========================================================
+   ACTIVITIES
+========================================================= */
+
+.activities{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.activity{
+    padding:28px;
+
+    background:white;
+
+    border:1px solid var(--border);
+
+    border-radius:15px;
+}
+
+.activity-icon{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.activity h3{
+    color:var(--blue);
+    margin-bottom:8px;
+}
+
+/* =========================================================
+   SUSTAINABILITY
+========================================================= */
+
+.sustainability{
+    background:var(--light);
+}
+
+.sustain-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.sustain-card{
+    padding:27px;
+
+    background:white;
+
+    border-left:5px solid var(--cyan);
+
+    border-radius:12px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.04);
+}
+
+.sustain-card h3{
+    color:var(--blue);
+    margin-bottom:8px;
+}
+
+/* =========================================================
+   STAKEHOLDERS
+========================================================= */
+
+.stakeholders{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.stakeholder{
+    background:white;
+
+    padding:28px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    text-align:center;
+}
+
+.stakeholder-icon{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+/* =========================================================
+   DOCUMENTATION
+========================================================= */
+
+.documentation{
+    background:#f1f5f9;
+}
+
+.photo-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.photo{
+    aspect-ratio:4/3;
+
+    background:white;
+
+    border:2px dashed #94a3b8;
+
+    border-radius:13px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    color:#64748b;
+
+    padding:15px;
+
+    overflow:hidden;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background:#020617;
+    color:#cbd5e1;
+
+    padding:50px 0;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+}
+
+footer h3{
+    color:white;
+    margin-bottom:12px;
+}
+
+.footer-bottom{
+    margin-top:35px;
+    padding-top:20px;
+
+    border-top:1px solid #1e293b;
+
+    text-align:center;
+
+    font-size:12px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:900px){
+
+    .hero-grid,
+    .about-grid,
+    .findings{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .pathway{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .activities,
+    .sustain-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stakeholders{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .photo-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .nav-links{
+        display:none;
+    }
+}
+
+@media(max-width:550px){
+
+    section{
+        padding:65px 0;
+    }
+
+    .hero h1{
+        font-size:43px;
+    }
+
+    .stats{
+        grid-template-columns:1fr;
+    }
+
+    .pathway{
+        grid-template-columns:1fr;
+    }
+
+    .stakeholders,
+    .photo-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<nav class="navbar">
+
+<div class="container nav-inner">
+
+<div class="logo">
+NSNOP <span>●</span> KVIDS
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#programme">Programme</a></li>
+<li><a href="#impact">Impact</a></li>
+<li><a href="#register">Schools</a></li>
+<li><a href="#geo">Geo Coverage</a></li>
+<li><a href="#sustainability">Sustainability</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<header class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+<div class="award-badge">
+🏆 U. SUMITHRA & RAMANATH BHAT – BEST OUTREACH PROGRAMME AWARD
+</div>
+
+<h1>
+Confident Smile<br>
+<span>Healthy Tomorrow</span>
+</h1>
+
+<p class="hero-subtitle">
+
+Namma School Namma Ooru Palli (NSNOP)
+
+</p>
+
+<p class="hero-meta">
+
+A school-based comprehensive oral health outreach programme
+by the Department of Public Health Dentistry,
+Karpaga Vinayaga Institute of Dental Sciences.
+
+<br><br>
+
+Academic Year 2025–2026 |
+Reporting Period: 19.01.2026 – 02.04.2026
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a href="#impact" class="btn btn-primary">
+Explore Programme
+</a>
+
+<a
+href="https://earth.google.com/earth/d/1xzPEekhLJifk1g9wd2k8Toj9FHLMAJxh?usp=sharing"
+target="_blank"
+class="btn btn-secondary">
+
+🌍 Open Google Earth Project
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-card">
+
+<div class="hero-card-title">
+Programme at a Glance
+</div>
+
+<div class="hero-number">
+97
+</div>
+
+<div class="hero-label">
+Schools Completed
+</div>
+
+
+<div class="hero-number">
+5,894
+</div>
+
+<div class="hero-label">
+Students Screened
+</div>
+
+
+<div class="hero-number">
+403
+</div>
+
+<div class="hero-label">
+Children Treated
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- =====================================================
+     PROGRAMME DETAILS
+===================================================== -->
+
+<section id="programme">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>01 • Programme</small>
+
+<h2>A School-Based Oral Health Model</h2>
+
+<p>
+A comprehensive outreach pathway integrating screening,
+education, prevention, primary treatment and referral.
+</p>
+
+</div>
+
+
+<div class="about-grid">
+
+<div class="card">
+
+<h3>Programme Details</h3>
+
+<div class="info-row">
+<strong>Institution</strong>
+<span>Karpaga Vinayaga Institute of Dental Sciences</span>
+</div>
+
+<div class="info-row">
+<strong>Department</strong>
+<span>Public Health Dentistry</span>
+</div>
+
+<div class="info-row">
+<strong>Programme</strong>
+<span>NSNOP – Confident Smile–Healthy Tomorrow</span>
+</div>
+
+<div class="info-row">
+<strong>Location</strong>
+<span>Madhuranthakam Block, Chengalpattu District</span>
+</div>
+
+<div class="info-row">
+<strong>Schools Approved</strong>
+<span>124 PUPS/PUMS Schools</span>
+</div>
+
+<div class="info-row">
+<strong>Schools Completed</strong>
+<span>97</span>
+</div>
+
+<div class="info-row">
+<strong>Funding</strong>
+<span>No Funding</span>
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h3>Objectives</h3>
+
+<p>
+To improve access to essential oral health services among
+schoolchildren through systematic screening, oral health
+education, preventive interventions, primary treatment
+and referral.
+</p>
+
+<br>
+
+<p>
+The programme aimed to identify common oral diseases early,
+provide need-based care at school level, strengthen oral
+health awareness and support the Government's NSNOP
+school-health initiative through coordinated,
+community-oriented dental services.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     IMPACT
+===================================================== -->
+
+<section id="impact" class="impact">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>02 • Impact</small>
+
+<h2>Measurable Outreach Impact</h2>
+
+<p>
+The programme established a pathway from detection
+to preventive and primary care.
+</p>
+
+</div>
+
+
+<div class="stats">
+
+<div class="stat">
+<div class="stat-number">97</div>
+<div class="stat-label">Schools Completed</div>
+</div>
+
+<div class="stat">
+<div class="stat-number">5,894</div>
+<div class="stat-label">Students Screened</div>
+</div>
+
+<div class="stat">
+<div class="stat-number">3,017</div>
+<div class="stat-label">Dental Caries</div>
+</div>
+
+<div class="stat">
+<div class="stat-number">1,724</div>
+<div class="stat-label">Gingivitis</div>
+</div>
+
+<div class="stat">
+<div class="stat-number">403</div>
+<div class="stat-label">Students Treated</div>
+</div>
+
+<div class="stat">
+<div class="stat-number">116</div>
+<div class="stat-label">Fluoride Procedures</div>
+</div>
+
+<div class="stat">
+<div class="stat-number">39</div>
+<div class="stat-label">Pit & Fissure Sealants</div>
+</div>
+
+<div class="stat">
+<div class="stat-number">84</div>
+<div class="stat-label">Severe Malocclusion</div>
+</div>
+
+</div>
+
+
+<div class="findings">
+
+<div class="card">
+
+<h3>Oral Health Findings</h3>
+
+<div class="bar-item">
+
+<div class="bar-title">
+<span>Dental Caries</span>
+<span>3,017 · 51.2%</span>
+</div>
+
+<div class="bar">
+<div class="fill" style="width:51.2%"></div>
+</div>
+
+</div>
+
+
+<div class="bar-item">
+
+<div class="bar-title">
+<span>Gingivitis</span>
+<span>1,724 · 29.3%</span>
+</div>
+
+<div class="bar">
+<div class="fill" style="width:29.3%"></div>
+</div>
+
+</div>
+
+
+<div class="bar-item">
+
+<div class="bar-title">
+<span>Severe Malocclusion</span>
+<span>84 · 1.4%</span>
+</div>
+
+<div class="bar">
+<div class="fill" style="width:1.4%"></div>
+</div>
+
+</div>
+
+
+<div class="bar-item">
+
+<div class="bar-title">
+<span>Students Treated</span>
+<span>403 · 6.8%</span>
+</div>
+
+<div class="bar">
+<div class="fill" style="width:6.8%"></div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h3>Services Delivered</h3>
+
+<p>✓ Oral health screening</p>
+<p>✓ Oral health education</p>
+<p>✓ Dental caries identification</p>
+<p>✓ Gingivitis identification</p>
+<p>✓ Malocclusion identification</p>
+<p>✓ Fluoride preventive procedures</p>
+<p>✓ Pit-and-fissure sealants</p>
+<p>✓ Atraumatic restorative treatment</p>
+<p>✓ Scaling</p>
+<p>✓ Referral</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CARE PATHWAY
+===================================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>03 • Intervention Model</small>
+
+<h2>The NSNOP Care Continuum</h2>
+
+<p>
+From identifying an oral health problem to connecting
+the child with appropriate care.
+</p>
+
+</div>
+
+
+<div class="pathway">
+
+<div class="step">
+
+<div class="step-circle">1</div>
+
+<h3>SCREEN</h3>
+
+<p>
+Systematic oral health screening.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-circle">2</div>
+
+<h3>EDUCATE</h3>
+
+<p>
+Oral health education and awareness.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-circle">3</div>
+
+<h3>PREVENT</h3>
+
+<p>
+Fluoride and sealant interventions.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-circle">4</div>
+
+<h3>TREAT</h3>
+
+<p>
+Need-based primary dental care.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-circle">5</div>
+
+<h3>REFER</h3>
+
+<p>
+Referral for continuing care.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     ACTIVITIES
+===================================================== -->
+
+<section class="impact">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>04 • Activities</small>
+
+<h2>Comprehensive Outreach</h2>
+
+</div>
+
+
+<div class="activities">
+
+<div class="activity">
+
+<div class="activity-icon">🔎</div>
+
+<h3>Oral Health Screening</h3>
+
+<p>
+Systematic screening of schoolchildren for
+common oral health problems.
+</p>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">📚</div>
+
+<h3>Health Education</h3>
+
+<p>
+Promoting oral health awareness and healthy
+behaviour among schoolchildren.
+</p>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">🛡️</div>
+
+<h3>Preventive Care</h3>
+
+<p>
+Fluoride-based procedures and
+pit-and-fissure sealants.
+</p>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">🦷</div>
+
+<h3>Primary Treatment</h3>
+
+<p>
+Need-based treatment and restorative
+care at school level.
+</p>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">📋</div>
+
+<h3>Referral</h3>
+
+<p>
+Identification and referral of children
+requiring further dental care.
+</p>
+
+</div>
+
+
+<div class="activity">
+
+<div class="activity-icon">📍</div>
+
+<h3>Geo-tagged Documentation</h3>
+
+<p>
+Geographic documentation of outreach
+coverage and field activities.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     GOOGLE EARTH
+===================================================== -->
+
+<section id="geo" class="geo-section">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>05 • Geospatial Documentation</small>
+
+<h2>Explore the Outreach Footprint</h2>
+
+<p>
+The programme was implemented across Government schools
+in Madhuranthakam Block, Chengalpattu District.
+Explore the complete geographic project through Google Earth.
+</p>
+
+</div>
+
+
+<div class="geo-box">
+
+<div>
+
+<div class="globe">🌍</div>
+
+<h3>Interactive Google Earth Project</h3>
+
+<p>
+View the geographic distribution of the NSNOP
+outreach programme and participating schools.
+</p>
+
+<a
+href="https://earth.google.com/earth/d/1xzPEekhLJifk1g9wd2k8Toj9FHLMAJxh?usp=sharing"
+target="_blank"
+class="btn btn-primary">
+
+OPEN GOOGLE EARTH PROJECT ↗
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SCHOOL REGISTER
+===================================================== -->
+
+<section id="register" class="register-section">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>06 • Outreach Register</small>
+
+<h2>97 Schools Completed</h2>
+
+<p>
+Search the programme service register by school,
+date or number of beneficiaries.
+</p>
+
+</div>
+
+
+<div class="register-tools">
+
+<input
+id="schoolSearch"
+class="search"
+type="text"
+placeholder="🔎 Search school name, date or screening count..."
+>
+
+</div>
+
+
+<div class="school-table-wrapper">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>#</th>
+<th>Date</th>
+<th>School / Venue</th>
+<th>Screened</th>
+<th>Location</th>
+
+</tr>
+
+</thead>
+
+<tbody id="schoolTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SUSTAINABILITY
+===================================================== -->
+
+<section id="sustainability" class="sustainability">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>07 • Sustainability</small>
+
+<h2>Designed for Continuity</h2>
+
+<p>
+The programme is integrated within the Government's
+NSNOP school-health framework.
+</p>
+
+</div>
+
+
+<div class="sustain-grid">
+
+<div class="sustain-card">
+
+<h3>Government Integration</h3>
+
+<p>
+Formal Government coordination and school-level
+access provide a framework for continued outreach.
+</p>
+
+</div>
+
+
+<div class="sustain-card">
+
+<h3>Repeatable Model</h3>
+
+<p>
+Screening, education, prevention, treatment and
+referral can be systematically repeated across schools.
+</p>
+
+</div>
+
+
+<div class="sustain-card">
+
+<h3>Follow-up</h3>
+
+<p>
+Continuing reporting and evaluation provide a
+mechanism for programme improvement.
+</p>
+
+</div>
+
+
+<div class="sustain-card">
+
+<h3>Re-screening</h3>
+
+<p>
+Periodic re-screening can help identify changing
+oral health needs.
+</p>
+
+</div>
+
+
+<div class="sustain-card">
+
+<h3>Referral Completion</h3>
+
+<p>
+Referral follow-up can strengthen continuity
+between school screening and dental care.
+</p>
+
+</div>
+
+
+<div class="sustain-card">
+
+<h3>Geo-tagged Register</h3>
+
+<p>
+Maintaining the geo-tagged camp register creates
+a reproducible record of programme coverage.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     STAKEHOLDERS
+===================================================== -->
+
+<section>
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>08 • Collaboration</small>
+
+<h2>Stakeholders</h2>
+
+</div>
+
+
+<div class="stakeholders">
+
+<div class="stakeholder">
+
+<div class="stakeholder-icon">🏛️</div>
+
+<h3>KVIDS</h3>
+
+<p>
+Karpaga Vinayaga Institute
+of Dental Sciences
+</p>
+
+</div>
+
+
+<div class="stakeholder">
+
+<div class="stakeholder-icon">🦷</div>
+
+<h3>Public Health Dentistry</h3>
+
+<p>
+Department of Public
+Health Dentistry
+</p>
+
+</div>
+
+
+<div class="stakeholder">
+
+<div class="stakeholder-icon">🏫</div>
+
+<h3>Government Schools</h3>
+
+<p>
+School administrations,
+teachers and staff
+</p>
+
+</div>
+
+
+<div class="stakeholder">
+
+<div class="stakeholder-icon">👧🏽</div>
+
+<h3>Schoolchildren</h3>
+
+<p>
+Children participating in
+screening and services
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     DOCUMENTATION
+===================================================== -->
+
+<section class="documentation">
+
+<div class="container">
+
+<div class="section-heading">
+
+<small>09 • Award Evidence</small>
+
+<h2>Geo-tagged Field Documentation</h2>
+
+<p>
+Original field photographs documenting programme
+implementation and geographic location.
+</p>
+
+</div>
+
+
+<div class="photo-grid">
+
+<!--
+=========================================================
+TO ADD YOUR ACTUAL PHOTOS:
+
+Replace the contents of each .photo box with:
+
+<img src="photos/photo1.jpg">
+
+Create a folder:
+
+photos/
+
+and place your images inside it.
+=========================================================
+-->
+
+<div class="photo">
+
+PHOTO 01<br><br>
+Insert geo-tagged photograph
+
+</div>
+
+
+<div class="photo">
+
+PHOTO 02<br><br>
+Insert geo-tagged photograph
+
+</div>
+
+
+<div class="photo">
+
+PHOTO 03<br><br>
+Insert geo-tagged photograph
+
+</div>
+
+
+<div class="photo">
+
+PHOTO 04<br><br>
+Insert geo-tagged photograph
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
+
+<h3>
+Confident Smile – Healthy Tomorrow
+</h3>
+
+<p>
+Namma School Namma Ooru Palli (NSNOP)
+</p>
+
+<p style="margin-top:10px">
+
+Department of Public Health Dentistry<br>
+
+Karpaga Vinayaga Institute of Dental Sciences
+
+</p>
+
+</div>
+
+
+<div>
+
+<h3>Programme Reach</h3>
+
+<p>124 Schools Approved</p>
+<p>97 Schools Completed</p>
+<p>5,894 Students Screened</p>
+<p>403 Students Treated</p>
+
+</div>
+
+
+<div>
+
+<h3>Programme Area</h3>
+
+<p>
+Madhuranthakam Block<br>
+Chengalpattu District<br>
+Tamil Nadu, India
+</p>
+
+</div>
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 Karpaga Vinayaga Institute of Dental Sciences |
+NSNOP – Confident Smile–Healthy Tomorrow
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+/*
+=========================================================
+97 SCHOOL OUTREACH REGISTER
+=========================================================
+*/
+
+const schools = [
+
+["1","30.01.2026","PUPS, Pilapoor","56"],
+["2","30.01.2026","PUPS, Sithandi Mandabam","88"],
+["3","31.01.2026","PUMS, Mamandur Vadapathi","51"],
+["4","31.01.2026","PUPS, Meyyur (North)","36"],
+["5","31.01.2026","Mamandur (Thenpathi)","79"],
+["6","31.01.2026","PUPS, Meyyur – South","23"],
+["7","02.02.2026","PUMS, Pazhamathur","73"],
+["8","02.02.2026","Government High School, Sithandi Mandapam","182"],
+["9","03.02.2026","Government High School, Bukkathurai","162"],
+["10","03.02.2026","PUPS, Bukkathurai","49"],
+["11","04.02.2026","PUPS Kumaravadi","42"],
+["12","04.02.2026","PUPS Karunagaracheri","44"],
+["13","04.02.2026","PUPS Samathuvapuram","43"],
+["14","05.02.2026","PUPS Mangalam Colony","11"],
+["15","05.02.2026","PUPS Palliagaram","36"],
+["16","05.02.2026","PUPS Nelli","34"],
+["17","06.02.2026","PUPS Mangalam","19"],
+["18","06.02.2026","PUPS Nelvoy Coot Road","35"],
+["19","06.02.2026","PUPS Indrapuram","9"],
+["20","09.02.2026","PUPS, Kunnankulathur","25"],
+["21","09.02.2026","GHSS, Kunnankulathur","269"],
+["22","10.02.2026","PUMS, Vaiyavur","111"],
+["23","10.02.2026","PUPS, Malaivaiyavur","44"],
+["24","11.02.2026","Govt. ADW Primary School, Pazhayanur","12"],
+["25","11.02.2026","PUMS School, Pazhayanur","131"],
+["26","12.02.2026","MCSM Mat. Hr. Sec. School, Padalam","278"],
+["27","12.02.2026","PUMS School, Padalam","58"],
+["28","13.02.2026","PUMS, LN Puram","73"],
+["29","13.02.2026","PUMS, Arayapakkam","66"],
+["30","15.02.2026","PUMS, Athimanam","16"],
+["31","15.02.2026","PUMS, Saanur","50"],
+["32","16.02.2026","PUMS, Valluvapakkam","65"],
+["33","17.02.2026","PUMS, Vedavakkam","77"],
+["34","17.02.2026","PUPS, Sathamai","14"],
+["35","17.02.2026","PUPS, Melma","12"],
+["36","23.02.2026","Government Higher Secondary School, Valluvapakkam","150"],
+["37","24.02.2026","PUPS, Soorai","26"],
+["38","24.02.2026","PUPS, Andavakkam","19"],
+["39","24.02.2026","PUPS, Sithalamangalam","22"],
+["40","25.02.2026","PUMS, Pakkam","45"],
+["41","25.02.2026","GHS, Pakkam","99"],
+["42","26.02.2026","PUPS, Nethapakkam","46"],
+["43","26.02.2026","PUPS, Vasanthavadi","16"],
+["44","26.02.2026","PUPS, Thatankuppam","26"],
+["45","27.02.2026","PUMS, Silavattam","114"],
+["46","02.03.2026","PUMS, Karunguzhi East","81"],
+["47","02.03.2026","PUPS, Melavalampettai","269"],
+["48","03.03.2026","PUMS, Puzhudhivakkam","77"],
+["49","03.03.2026","PUPS, Pudhupattu","74"],
+["50","04.03.2026","PUMS, Munithikuppam","76"],
+["51","04.03.2026","PUPS, Kathiricheri","53"],
+["52","05.03.2026","PUPS, Thottanaval","84"],
+["53","05.03.2026","GHS, Thottanaval","108"],
+["54","05.03.2026","PUPS, Mulli","14"],
+["55","06.03.2026","PUPS, Keezhavalam","22"],
+["56","06.03.2026","PUPS, Eruvakkam","20"],
+["57","06.03.2026","PUPS, Kinar","53"],
+["58","09.03.2026","PUMS, Mudhukarai","113"],
+["59","09.03.2026","PUMS, Kandracheri","36"],
+["60","10.03.2026","Budhur","82"],
+["61","10.03.2026","GHS, Boodhur","96"],
+["62","11.03.2026","PUPS, Kunnathur","59"],
+["63","11.03.2026","PUPS, Keezhpattu","23"],
+["64","12.03.2026","PUPS, Essur","57"],
+["65","12.03.2026","Government Higher Secondary School, Essur","46"],
+["66","13.03.2026","PUPS, Veeranakunnam","52"],
+["67","13.03.2026","GHS, Veeranakunnam","108"],
+["68","17.03.2026","PUPS, Zamin Endathur","73"],
+["69","17.03.2026","GHSS, Zamin Endathur","161"],
+["70","18.03.2026","PUPS, Malaipalayam","127"],
+["71","18.03.2026","GHS, Malaipalayam","113"],
+["72","23.03.2026","PUPS, Arungunan","88"],
+["73","23.03.2026","ADW Middle School, Devathur","68"],
+["74","23.03.2026","PUPS, Mariputhur","12"],
+["75","23.03.2026","PUMS, Kavathur","64"],
+["76","24.03.2026","PUPS, Melakandai","29"],
+["77","24.03.2026","PUPS, Keezhakandai","23"],
+["78","24.03.2026","PUPS, Athivakkam","43"],
+["79","24.03.2026","PUPS, Murugapamkkam","44"],
+["80","25.03.2026","PUMS, Zaminperuvelu","65"],
+["81","25.03.2026","PUPS, Payambadi","17"],
+["82","26.03.2026","PUPS, Ozhavetti","36"],
+["83","26.03.2026","PUPS, Chinnavenmani","33"],
+["84","26.03.2026","PUMS, Maruvalam","45"],
+["85","26.03.2026","Government AWD Primary School, Netrambakkam","24"],
+["86","27.03.2026","PUPS, Nesapakkam","7"],
+["87","27.03.2026","PUPS, Ariyanoor","15"],
+["88","27.03.2026","PUPS, Nagamalai","18"],
+["89","27.03.2026","PUPS, Periyavenmani","38"],
+["90","27.03.2026","PUPS, Devanur","9"],
+["91","30.03.2026","PUPS, Nallamur","108"],
+["92","30.03.2026","PUPS, Keezhakaranai","10"],
+["93","30.03.2026","PUPS, Kolambakkam","8"],
+["94","30.03.2026","PUPS, Chithamoor","21"],
+["95","02.04.2026","PUPS, Thonnadu","30"],
+["96","02.04.2026","PUPS, Neelamangalam","14"],
+["97","02.04.2026","PUPS, Melvasalai","12"]
+
+];
+
+
+/*
+=========================================================
+CREATE TABLE
+=========================================================
+*/
+
+function renderTable(data){
+
+    const table =
+        document.getElementById("schoolTable");
+
+    table.innerHTML = "";
+
+    data.forEach(row => {
+
+        const tr = document.createElement("tr");
+
+        const mapQuery =
+            encodeURIComponent(
+                row[2] +
+                ", Madhuranthakam, Chengalpattu, Tamil Nadu"
+            );
+
+        tr.innerHTML = `
+
+            <td>${row[0]}</td>
+
+            <td>${row[1]}</td>
+
+            <td>
+                <strong>${row[2]}</strong>
+            </td>
+
+            <td>
+                <strong>${row[3]}</strong>
+            </td>
+
+            <td>
+                <a
+                    class="map-link"
+                    href="https://www.google.com/maps/search/?api=1&query=${mapQuery}"
+                    target="_blank">
+                    📍 View
+                </a>
+            </td>
+
+        `;
+
+        table.appendChild(tr);
+
+    });
+
+}
+
+
+/*
+=========================================================
+INITIAL TABLE
+=========================================================
+*/
+
+renderTable(schools);
+
+
+/*
+=========================================================
+SEARCH
+=========================================================
+*/
+
+document
+.getElementById("schoolSearch")
+.addEventListener("input",function(){
+
+    const search =
+        this.value.toLowerCase();
+
+    const filtered =
+        schools.filter(row =>
+
+            row.join(" ")
+            .toLowerCase()
+            .includes(search)
+
+        );
+
+    renderTable(filtered);
+
+});
+
+</script>
+
+
+</body>
+
+</html>
